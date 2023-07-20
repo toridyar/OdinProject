@@ -1,0 +1,191 @@
+:root {
+  --white: rgb(238, 236, 236);
+  --light-gray: #f1f1f1;
+  --med-gray: #dcdddd;
+  --dark-gray: #3b3b3b;
+  --primary: #596d48;
+  --primary-emphasis: #283121;
+  --blue: blue;
+  --red: red;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+a:link,
+a:visited {
+  color: unset;
+}
+
+em {
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.title {
+  flex: 1;
+  height: 100vh;
+  background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg) 0% 0% / cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: relative;
+  top: 200px;
+  padding: 16px;
+  background-color: #00000052;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.logo__name {
+  color: var(--white);
+  font-family: "Quintessential", sans-serif;
+  font-size: 4rem;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  margin: 12px;
+  color: var(--white);
+}
+
+.sign-up {
+  flex: 1;
+}
+
+.sign-up__form form,
+.form-header,
+.form-cta,
+.alt-cta {
+  margin: 1.5rem 2.5rem;
+}
+
+.sign-up__intro {
+  height: 33%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: end;
+  padding: 2.5rem;
+}
+
+.form-fields {
+  margin: 16px 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.sign-up__form-wrapper {
+  border: 1px solid transparent;
+  box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.sign-up__form fieldset {
+  display: flex;
+  gap: 2rem;
+}
+
+.sign-up__form label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--dark-gray);
+  letter-spacing: 0.1rem;
+}
+
+.sign-up__form input {
+  border: 1px solid var(--med-gray);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.sign-up__form input:invalid {
+  border: 2px solid var(--red);
+}
+
+.sign-up__form input:hover,
+.sign-up__form input:focus,
+.sign-up__form input:focus-within,
+.sign-up__form input:focus-visible {
+  border: 2px solid var(--blue);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  color: var(--white);
+  background-color: var(--primary);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 48px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+  border: 2px solid var(--primary);
+}
+
+input[type="submit"]:active {
+  border: none;
+}
+
+.alt-cta a:link,
+.alt-cta a:visited {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.alt-cta a:link:hover,
+.alt-cta a:visited:hover,
+.alt-cta a:link:focus,
+.alt-cta a:visited:focus {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+
+  .logo {
+    top: 0;
+  }
+
+  .image-credit {
+    display: none;
+  }
+}
+
+@media (max-width: 481px) {
+  .sign-up__form fieldset {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}

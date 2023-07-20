@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quintessential:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign-Up Form</title>
+  </head>
+  <body>
+    <div class="title">
+      <div class="logo">
+        <img src="./assets/odin-lined.png" alt="odin logo" />
+        <h1 class="logo__name">Odin</h1>
+      </div>
+      <div class="image-credit">
+        Photo by
+        <a href="">Halie West</a>
+        on
+        <a href="">Unsplash</a>
+      </div>
+    </div>
+    <div class="sign-up">
+      <div class="sign-up__intro">
+        <div class="intro-text">
+          <p>
+            You know you need something like this in your life to help you
+            realize your deepest dreams. Sign up <em>now</em> to get started.
+          </p>
+          <br />
+          <p>You <em>know</em> you want to.</p>
+        </div>
+      </div>
+
+      <div class="sign-up__form">
+        <h2 class="form-header">Let's do this!</h2>
+        <div class="sign-up__form-wrapper">
+          <form action="" method="post" id="signUp">
+            <div class="form-fields">
+              <!-- sections get ids
+            all sections require headers
+            change sections in form to divs
+          run through validator.w3
+          -->
+
+              <fieldset>
+                <div class="form-field">
+                  <label for="first_name">First Name</label>
+                  <input type="text" id="first_name" name="first_name" />
+                </div>
+
+                <div class="form-field">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name" />
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-field">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" />
+                </div>
+                <div class="form-field">
+                  <label for="confirm_password">Confirm Password</label>
+
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="form-cta" form="signUp">
+        <input type="submit" value="Create Account" />
+      </div>
+      <div class="alt-cta">Already have an account? <a href="">Log in</a></div>
+    </div>
+  </body>
+</html>
