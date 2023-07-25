@@ -1,3 +1,5 @@
+@import "reset.css";
+
 :root {
   --white: rgb(238, 236, 236);
   --light-gray: #f1f1f1;
@@ -8,10 +10,16 @@
   --blue: blue;
   --red: red;
   font-family: sans-serif;
+  --logo-font: "Quintessential";
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -42,9 +50,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
   position: relative;
   top: 200px;
+  height: 100px;
   padding: 16px;
   background-color: #00000052;
 }
@@ -55,7 +63,7 @@ h2 {
 
 .logo__name {
   color: var(--white);
-  font-family: "Quintessential", sans-serif;
+  font-family: var(--logo-font), sans-serif;
   font-size: 4rem;
 }
 
@@ -133,7 +141,7 @@ h2 {
 .sign-up__form input:focus,
 .sign-up__form input:focus-within,
 .sign-up__form input:focus-visible {
-  border: 2px solid var(--blue);
+  outline: 2px solid var(--blue);
   box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
 }
 

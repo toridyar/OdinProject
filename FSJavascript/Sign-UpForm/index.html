@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
 
-    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,19 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Quintessential:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Sign-Up Form</title>
   </head>
   <body>
     <div class="title">
       <div class="logo">
         <img src="./assets/odin-lined.png" alt="odin logo" />
-        <h1 class="logo__name">Odin</h1>
+        <div class="logo__name">Odin</div>
       </div>
       <div class="image-credit">
-        Photo by
-        <a href="">Halie West</a>
-        on
-        <a href="">Unsplash</a>
+        <p>
+          Photo by
+          <a href="">Halie West</a>
+          on
+          <a href="">Unsplash</a>
+        </p>
       </div>
     </div>
     <div class="sign-up">
@@ -39,17 +40,11 @@
         </div>
       </div>
 
-      <div class="sign-up__form">
+      <section class="sign-up__form">
         <h2 class="form-header">Let's do this!</h2>
         <div class="sign-up__form-wrapper">
           <form action="" method="post" id="signUp">
             <div class="form-fields">
-              <!-- sections get ids
-            all sections require headers
-            change sections in form to divs
-          run through validator.w3
-          -->
-
               <fieldset>
                 <div class="form-field">
                   <label for="first_name">First Name</label>
@@ -97,7 +92,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </section>
       <div class="form-cta" form="signUp">
         <input type="submit" value="Create Account" />
       </div>
